@@ -1,0 +1,9 @@
+{
+  "clangd.path": "/Users/lukas/.local/clang-p2996/bin/clangd",
+  "clangd.arguments": [
+    "--compile-commands-dir=build",
+    "--all-scopes-completion",
+    "--completion-style=detailed",
+    "--background-index"
+  ]
+}
