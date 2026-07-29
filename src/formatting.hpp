@@ -1,5 +1,5 @@
 #pragma once
-#include "connection.hpp"
+#include "networking.hpp"
 #include "logging.hpp"
 #include <format>
 #include <string_view>

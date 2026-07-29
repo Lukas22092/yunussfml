@@ -1,5 +1,8 @@
 #include <meta>
 #include <print>
+#include <expected>
+#include "networking.hpp"
+
 
 enum class Color { Red, Green, Blue , Yellow};
 
@@ -16,6 +19,13 @@ void print_container(Player& p) {
 }
 
 int main() {
+
+    auto registry = ConnectionRegistry{};
+
+
+    
+
+
     Player playerrrrr{25};
 
     constexpr auto arr = define_static_array(
@@ -25,6 +35,7 @@ int main() {
         std::println("{} = {}", std::meta::identifier_of(e), playerrrrr.[:e:]);
     }
 }
+
 
 
 
