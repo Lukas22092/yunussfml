@@ -1,41 +1,21 @@
-#include <meta>
-#include <print>
-#include <expected>
-#include "networking.hpp"
+#include <SFML/Graphics.hpp>
+#include <iostream>
+int main()
+{
+    std::cout << "test";
+    sf::RenderWindow window(sf::VideoMode({800u, 600u}), "SFML 3");
 
+    while (window.isOpen())
+    {
+        while (const std::optional event = window.pollEvent())
+        {
+            if (event->is<sf::Event::Closed>())
+                window.close();
+        }
 
-enum class Color { Red, Green, Blue , Yellow};
-
-struct Player {
-    int age;
-    std::string name{"Lukas"};
-};
-
-void print_container(Player& p) {
-    template for (constexpr auto e :
-                  define_static_array(std::meta::nonstatic_data_members_of(^^Player, std::meta::access_context::unprivileged()))) {
-        std::println("  {} = {}", std::meta::identifier_of(e), p.[:e:]);
+        window.clear(sf::Color::Black);
+        window.display();
     }
+
+    return 0;
 }
-
-int main() {
-
-    auto registry = ConnectionRegistry{};
-
-
-    
-
-
-    Player playerrrrr{25};
-
-    constexpr auto arr = define_static_array(
-        std::meta::nonstatic_data_members_of(^^Player, std::meta::access_context::unprivileged()));
-
-    template for (constexpr auto e : arr) {
-        std::println("{} = {}", std::meta::identifier_of(e), playerrrrr.[:e:]);
-    }
-}
-
-
-
-

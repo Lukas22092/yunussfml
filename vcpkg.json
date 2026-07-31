@@ -1,9 +1,7 @@
 {
-  "name": "template",
+  "name": "sfml-template",
   "version": "0.1.0",
   "dependencies": [
-    "boost-asio",
-    "boost-beast",
-    "gtest"
+    "sfml"
   ]
 }
