@@ -1,21 +1,22 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
-
-
-class Player
-{
-    sf::Vector3<float> position;
-}
-
-
+#include <print>git config pull.rebase false  # merge
 int main()
 {
-    /*
-    sfml::vec3;
-    Main mainclass = Main();
-    mainclass.objects.push_back(Object{0, 550, 800, 100});
-    mainclass.objects.push_back(Object{400, 500, 50, 50});
-    mainclass.objects.push_back(Object{460, 430, 50, 50});
-    mainclass.start(Player{400, 300, 20, 30});
-    */
+    std::print("dsnajdas");
+    sf::RenderWindow window(sf::VideoMode({800u, 600u}), "SFML 3");
+
+    while (window.isOpen())
+    {
+        while (const std::optional event = window.pollEvent())
+        {
+            if (event->is<sf::Event::Closed>())
+                window.close();
+        }
+
+        window.clear(sf::Color::Black);
+        window.display();
+    }
+
+    return 0;
 }
