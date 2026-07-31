@@ -1,8 +1,9 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
+#include <print>
 int main()
 {
-    std::cout << "test";
+    std::print("dsnajdas");
     sf::RenderWindow window(sf::VideoMode({800u, 600u}), "SFML 3");
 
     while (window.isOpen())
