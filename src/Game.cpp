@@ -3,7 +3,7 @@
 
 
 
-bool Game::leftWallCoalision(Player player, std::vector<Object> objects)
+bool Game::leftWallCoalision(const Player& player, const std::vector<Object>& objects)
     {
         //Wandkoalision, wenn
         for (const Object &o : objects)
@@ -21,7 +21,7 @@ bool Game::leftWallCoalision(Player player, std::vector<Object> objects)
         return false;
     };
 
-bool Game::rightWallCoalision(Player player, std::vector<Object> objects)
+bool Game::rightWallCoalision(const Player& player, const std::vector<Object>& objects)
     {
         //Wandkoalision, wenn
         for (const Object &o : objects)
@@ -39,7 +39,7 @@ bool Game::rightWallCoalision(Player player, std::vector<Object> objects)
         return false;
     };
 
-bool Game::groundCoalision(Player player, std::vector<Object> objects) 
+bool Game::groundCoalision(const Player& player, const std::vector<Object>& objects) 
     {
         //Bodenkollision
         for (const Object &o : objects)
@@ -54,7 +54,7 @@ bool Game::groundCoalision(Player player, std::vector<Object> objects)
         return false;
     };
 
-bool Game::headCoalision(Player player, std::vector<Object> objects) 
+bool Game::headCoalision(const Player& player, const std::vector<Object>& objects) 
     {
         for (const Object &o : objects)
         {

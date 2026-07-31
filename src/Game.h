@@ -16,9 +16,9 @@ class Game
     Player player{};
 
     public:
-    bool leftWallCoalision(Player player, std::vector<Object> objects);
-    bool rightWallCoalision(Player player, std::vector<Object> objects);
-    bool groundCoalision(Player player, std::vector<Object> objects); 
-    bool headCoalision(Player player, std::vector<Object> objects); 
+    bool leftWallCoalision(const Player& player, const std::vector<Object>& objects);
+    bool rightWallCoalision(const Player& player, const std::vector<Object>& objects);
+    bool groundCoalision(const Player& player, const std::vector<Object>& objects); 
+    bool headCoalision(const Player& player, const std::vector<Object>& objects); 
     void start();
 };
