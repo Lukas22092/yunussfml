@@ -1,5 +1,5 @@
 #!/bin/bash
-cmake -S . -B default
+cmake -S . -B build
 
 cmake --build build --target sfml-template
 

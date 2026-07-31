@@ -1,0 +1,3 @@
+/home/yunus/Documents/yunussfml/default/CMakeFiles/sfml-template.dir
+/home/yunus/Documents/yunussfml/default/CMakeFiles/edit_cache.dir
+/home/yunus/Documents/yunussfml/default/CMakeFiles/rebuild_cache.dir
