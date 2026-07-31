@@ -1,22 +1,14 @@
-#include <SFML/Graphics.hpp>
 #include <iostream>
-#include <print>git config pull.rebase false  # merge
+#include <print>
+
+#include "player.hpp"
+#include "Game.h"
+
 int main()
 {
-    std::print("dsnajdas");
-    sf::RenderWindow window(sf::VideoMode({800u, 600u}), "SFML 3");
+    Game game{};
+    game.start();
 
-    while (window.isOpen())
-    {
-        while (const std::optional event = window.pollEvent())
-        {
-            if (event->is<sf::Event::Closed>())
-                window.close();
-        }
-
-        window.clear(sf::Color::Black);
-        window.display();
-    }
-
-    return 0;
+    
+  
 }
